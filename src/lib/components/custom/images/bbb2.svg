@@ -1,0 +1,230 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+    style="margin:auto;background:transparent;display:block;z-index:1;position:relative" width="2560" height="1283"
+    preserveAspectRatio="xMidYMid" viewBox="0 0 2560 1283">
+    <g transform="translate(1280,641.5) scale(1,1) translate(-1280,-641.5)">
+        <defs>
+            <path id="path-2xhk4yiu11u-1" d="M-35 -35L35 -35L35 35L-35 35Z" fill="none" stroke="inherit"
+                stroke-width="4.333333333333334" transform="scale(0.3)"></path>
+            <path id="path-2xhk4yiu11u-2" d="M0 -37A37 37 0 0 1 0 37A37 37 0 0 1 0 -37" fill="none" stroke="inherit"
+                stroke-width="4.333333333333334" transform="scale(0.3)"></path>
+            <path id="path-2xhk4yiu11u-3" d="M0 -34.641L40 34.641L-40 34.641Z" fill="none" stroke="inherit"
+                stroke-width="4.333333333333334" transform="scale(0.3)"></path>
+        </defs>
+        <path id="path0" d="M 113.17459831848868 71.23136432122872
+c 0 53.09222390987278 -12.990650531139083 15.24989410177197 -28.240544632911053 15.24989410177197
+S 56.69350905266657 124.3235882311015 56.69350905266657 71.23136432122872
+s 12.990650531139083 -15.24989410177197 28.240544632911053 -15.24989410177197
+S 113.17459831848868 18.139140411355946 113.17459831848868 71.23136432122872
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-2" x="0" y="0" stroke="#bbddff">
+            <animateMotion begin="-9.820948746930094s" dur="10s" keyPoints="0;1" keyTimes="0;1" repeatCount="indefinite"
+                calcMode="linear">
+                <mpath xlink:href="#path0"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path1" d="M 226.08392856983122 993.3150338394905
+c 0 38.280711442832505 -9.366557055161143 10.995523499536995 -20.36208055469814 10.995523499536995
+S 185.35976746043494 1031.595745282323 185.35976746043494 993.3150338394905
+s 9.366557055161143 -10.995523499536995 20.36208055469814 -10.995523499536995
+S 226.08392856983122 955.034322396658 226.08392856983122 993.3150338394905
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-2" x="0" y="0" stroke="#aabbcc">
+            <animateMotion begin="-5.972536074427786s" dur="10s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite"
+                calcMode="linear">
+                <mpath xlink:href="#path1"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path2" d="M 368.24769623468353 713.1663931300704
+c 0 51.97382306967484 -12.71699926172895 14.92865130724703 -27.64565056897598 14.92865130724703
+S 312.9563950967316 765.1402161997453 312.9563950967316 713.1663931300704
+s 12.71699926172895 -14.92865130724703 27.64565056897598 -14.92865130724703
+S 368.24769623468353 661.1925700603956 368.24769623468353 713.1663931300704
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-2" x="0" y="0" stroke="#bbddff">
+            <animateMotion begin="-1.2353875326978914s" dur="10s" keyPoints="1;0" keyTimes="0;1"
+                repeatCount="indefinite" calcMode="linear">
+                <mpath xlink:href="#path2"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path3" d="M 582.0920611472098 449.8938269442804
+c 0 51.11373324053201 -12.506551750342936 14.68160422866345 -27.188155979006385 14.68160422866345
+S 527.715749189197 501.0075601848124 527.715749189197 449.8938269442804
+s 12.506551750342936 -14.68160422866345 27.188155979006385 -14.68160422866345
+S 582.0920611472098 398.78009370374843 582.0920611472098 449.8938269442804
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-3" x="0" y="0" stroke="#bbddff">
+            <animateMotion begin="-2.498715496926218s" dur="10s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite"
+                calcMode="linear">
+                <mpath xlink:href="#path3"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path4" d="M 610.0853501937765 143.15392681557535
+c 0 29.7292171495593 -7.2741701536155725 8.539243223809587 -15.813413377425158 8.539243223809587
+S 578.4585234389262 172.88314396513465 578.4585234389262 143.15392681557535
+s 7.2741701536155725 -8.539243223809587 15.813413377425158 -8.539243223809587
+S 610.0853501937765 113.42470966601604 610.0853501937765 143.15392681557535
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-1" x="0" y="0" stroke="#aabbcc">
+            <animateMotion begin="-1.2688028490469816s" dur="10s" keyPoints="1;0" keyTimes="0;1"
+                repeatCount="indefinite" calcMode="linear">
+                <mpath xlink:href="#path4"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path5" d="M 874.2386274962047 505.6887453620177
+c 0 21.285257065637804 -5.208094813932654 6.11385043374703 -11.321945247679682 6.11385043374703
+S 851.5947370008454 526.9740024276555 851.5947370008454 505.6887453620177
+s 5.208094813932654 -6.11385043374703 11.321945247679682 -6.11385043374703
+S 874.2386274962047 484.4034882963799 874.2386274962047 505.6887453620177
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-3" x="0" y="0" stroke="#ddeeff">
+            <animateMotion begin="-2.3527226331209983s" dur="10s" keyPoints="1;0" keyTimes="0;1"
+                repeatCount="indefinite" calcMode="linear">
+                <mpath xlink:href="#path5"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path6" d="M 976.1935583674582 1139.2302022573726
+c 0 36.622703119880704 -8.960874167630383 10.519287066348713 -19.480161233979096 10.519287066348713
+S 937.2332358995001 1175.8529053772534 937.2332358995001 1139.2302022573726
+s 8.960874167630383 -10.519287066348713 19.480161233979096 -10.519287066348713
+S 976.1935583674582 1102.607499137492 976.1935583674582 1139.2302022573726
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-3" x="0" y="0" stroke="#aabbcc">
+            <animateMotion begin="-9.858353811311101s" dur="10s" keyPoints="0;1" keyTimes="0;1" repeatCount="indefinite"
+                calcMode="linear">
+                <mpath xlink:href="#path6"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path7" d="M 1108.2225997033024 430.43902819264855
+c 0 41.20581067131185 -10.082272823831623 11.83571157580234 -21.917984399633962 11.83571157580234
+S 1064.3866309040345 471.6448388639604 1064.3866309040345 430.43902819264855
+s 10.082272823831623 -11.83571157580234 21.917984399633962 -11.83571157580234
+S 1108.2225997033024 389.2332175213367 1108.2225997033024 430.43902819264855
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-2" x="0" y="0" stroke="#aabbcc">
+            <animateMotion begin="-3.362882258329374s" dur="10s" keyPoints="0;1" keyTimes="0;1" repeatCount="indefinite"
+                calcMode="linear">
+                <mpath xlink:href="#path7"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path8" d="M 1277.288591677255 216.50988100262506
+c 0 48.68416966226126 -11.912084066297966 13.983750860436745 -25.89583492673471 13.983750860436745
+S 1225.4969218237854 265.19405066488633 1225.4969218237854 216.50988100262506
+s 11.912084066297966 -13.983750860436745 25.89583492673471 -13.983750860436745
+S 1277.288591677255 167.8257113403638 1277.288591677255 216.50988100262506
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-3" x="0" y="0" stroke="#ddeeff">
+            <animateMotion begin="-5.506928517051037s" dur="10s" keyPoints="0;1" keyTimes="0;1" repeatCount="indefinite"
+                calcMode="linear">
+                <mpath xlink:href="#path8"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path9" d="M 1339.2826873599197 235.64039762633857
+c 0 22.605224460833423 -5.531065559565624 6.492990004707473 -12.024055564273098 6.492990004707473
+S 1315.2345762313735 258.24562208717197 1315.2345762313735 235.64039762633857
+s 5.531065559565624 -6.492990004707473 12.024055564273098 -6.492990004707473
+S 1339.2826873599197 213.03517316550514 1339.2826873599197 235.64039762633857
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-2" x="0" y="0" stroke="#ddeeff">
+            <animateMotion begin="-3.870986826395424s" dur="10s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite"
+                calcMode="linear">
+                <mpath xlink:href="#path9"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path10" d="M 1458.984301723651 601.6365653987198
+c 0 48.39523661991321 -11.841387683595785 13.900759454655924 -25.74214713825171 13.900759454655924
+S 1407.5000074471475 650.031802018633 1407.5000074471475 601.6365653987198
+s 11.841387683595785 -13.900759454655924 25.74214713825171 -13.900759454655924
+S 1458.984301723651 553.2413287788065 1458.984301723651 601.6365653987198
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-2" x="0" y="0" stroke="#ddeeff">
+            <animateMotion begin="-7.091300155910716s" dur="10s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite"
+                calcMode="linear">
+                <mpath xlink:href="#path10"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path11" d="M 1726.8104471093984 358.7553031368748
+c 0 63.17962245968434 -15.458843793327016 18.147338366079545 -33.60618215940656 18.147338366079545
+S 1659.5980827905855 421.9349255965591 1659.5980827905855 358.7553031368748
+s 15.458843793327016 -18.147338366079545 33.60618215940656 -18.147338366079545
+S 1726.8104471093984 295.57568067719046 1726.8104471093984 358.7553031368748
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-2" x="0" y="0" stroke="#aabbcc">
+            <animateMotion begin="-1.1635057582849218s" dur="10s" keyPoints="0;1" keyTimes="0;1"
+                repeatCount="indefinite" calcMode="linear">
+                <mpath xlink:href="#path11"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path12" d="M 1734.118387590887 425.7286331973122
+c 0 24.092798404290285 -5.8950464180710265 6.920271882083379 -12.815318300154406 6.920271882083379
+S 1708.4877509905784 449.8214316016025 1708.4877509905784 425.7286331973122
+s 5.8950464180710265 -6.920271882083379 12.815318300154406 -6.920271882083379
+S 1734.118387590887 401.6358347930219 1734.118387590887 425.7286331973122
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-1" x="0" y="0" stroke="#ddeeff">
+            <animateMotion begin="-1.554697943818113s" dur="10s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite"
+                calcMode="linear">
+                <mpath xlink:href="#path12"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path13" d="M 1891.6272704530447 50.25236816427601
+c 0 58.074496526590565 -14.209717235229604 16.680972406573886 -30.89068964180349 16.680972406573886
+S 1829.845891169438 108.32686469086657 1829.845891169438 50.25236816427601
+s 14.209717235229604 -16.680972406573886 30.89068964180349 -16.680972406573886
+S 1891.6272704530447 -7.822128362314558 1891.6272704530447 50.25236816427601
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-3" x="0" y="0" stroke="#bbddff">
+            <animateMotion begin="-9.320814299710136s" dur="10s" keyPoints="0;1" keyTimes="0;1" repeatCount="indefinite"
+                calcMode="linear">
+                <mpath xlink:href="#path13"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path14" d="M 2073.8733845932784 427.0230503364438
+c 0 55.77624011152263 -13.647377899627875 16.020834925650117 -29.668212825277994 16.020834925650117
+S 2014.5369589427223 482.7992904479664 2014.5369589427223 427.0230503364438
+s 13.647377899627875 -16.020834925650117 29.668212825277994 -16.020834925650117
+S 2073.8733845932784 371.2468102249212 2073.8733845932784 427.0230503364438
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-2" x="0" y="0" stroke="#aabbcc">
+            <animateMotion begin="-1.832242776214359s" dur="10s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite"
+                calcMode="linear">
+                <mpath xlink:href="#path14"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path15" d="M 2225.8550826682454 874.5575049883086
+c 0 18.861959391072094 -4.615160276538917 5.417796846371772 -10.032957122910688 5.417796846371772
+S 2205.7891684224237 893.4194643793807 2205.7891684224237 874.5575049883086
+s 4.615160276538917 -5.417796846371772 10.032957122910688 -5.417796846371772
+S 2225.8550826682454 855.6955455972364 2225.8550826682454 874.5575049883086
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-2" x="0" y="0" stroke="#ddeeff">
+            <animateMotion begin="-6.731745173872921s" dur="10s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite"
+                calcMode="linear">
+                <mpath xlink:href="#path15"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path16" d="M 2291.3060265487443 119.65715037528538
+c 0 55.274304134039646 -13.524563777477784 15.876661825734791 -29.401225603212573 15.876661825734791
+S 2232.5035753423194 174.93145450932502 2232.5035753423194 119.65715037528538
+s 13.524563777477784 -15.876661825734791 29.401225603212573 -15.876661825734791
+S 2291.3060265487443 64.38284624124574 2291.3060265487443 119.65715037528538
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-1" x="0" y="0" stroke="#ddeeff">
+            <animateMotion begin="-6.227279606669858s" dur="10s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite"
+                calcMode="linear">
+                <mpath xlink:href="#path16"></mpath>
+            </animateMotion>
+        </use>
+        <path id="path17" d="M 2471.43813562395 80.85021633874568
+c 0 41.32354587759034 -10.111080374304018 11.869529135052545 -21.98060950935656 11.869529135052545
+S 2427.4769166052365 122.17376221633603 2427.4769166052365 80.85021633874568
+s 10.111080374304018 -11.869529135052545 21.98060950935656 -11.869529135052545
+S 2471.43813562395 39.52667046115534 2471.43813562395 80.85021633874568
+z" fill="none" stroke="none"></path>
+        <use xlink:href="#path-2xhk4yiu11u-3" x="0" y="0" stroke="#aabbcc">
+            <animateMotion begin="-9.351995410150424s" dur="10s" keyPoints="1;0" keyTimes="0;1" repeatCount="indefinite"
+                calcMode="linear">
+                <mpath xlink:href="#path17"></mpath>
+            </animateMotion>
+        </use>
+    </g>
+</svg>
