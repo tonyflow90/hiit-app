@@ -1,3 +1,5 @@
+export const prerender = true
+
 // import { trainings, settings } from '$stores/stores';
 
 // /** @type {import('./$types').PageServerLoad} */

@@ -209,8 +209,6 @@
         {#await settings.init() then}
           <ThemeSwitch bind:currentTheme={$settings.theme.value} />
         {/await}
-
-        <!-- <DarkmodeButton /> -->
       </div>
     </end>
   </header>

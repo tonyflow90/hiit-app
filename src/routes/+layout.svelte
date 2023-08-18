@@ -3,7 +3,6 @@
   import { settings } from "$stores/stores";
 
   import "../app.postcss";
-  import Darkmode from "$components/custom/darkmode/Darkmode.svelte";
 
   let show = false;
   const startUpTime = 1000;
