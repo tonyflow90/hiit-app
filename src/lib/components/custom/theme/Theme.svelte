@@ -1,4 +1,5 @@
 <script>
+  import { base } from "$app/paths";
   import { themes } from "./themes.js";
 
   export let theme = "default";
@@ -32,6 +33,6 @@
     name="color-scheme"
     content={theme === "default" ? "light dark" : theme}
   />
-  <link rel="stylesheet" href={`/theme/default.css`} />
-  <link rel="stylesheet" href={`/theme/${theme}.css`} />
+  <link rel="stylesheet" href={`${base}/theme/default.css`} />
+  <link rel="stylesheet" href={`${base}/theme/${theme}.css`} />
 </svelte:head>
