@@ -16,19 +16,18 @@
   import Background from "$components/custom/SplashScreen.svelte";
   import Theme from "$components/custom/theme/Theme.svelte";
 
-  import { pwaInfo } from 'virtual:pwa-info'; 
+  import { pwaInfo } from "virtual:pwa-info";
 
-  $: webManifestLink = pwaInfo ? pwaInfo.webManifest.linkTag : '' 
-</script> 
-  
-<svelte:head> 
- 	{@html webManifestLink} 
+  $: webManifestLink = pwaInfo ? pwaInfo.webManifest.linkTag : "";
+</script>
+
+<svelte:head>
+  {@html webManifestLink}
 </svelte:head>
 
 {#await settings.init() then}
   <Theme bind:theme={$settings.theme.value} />
 {/await}
-
 
 <Toaster />
 

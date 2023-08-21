@@ -5,7 +5,6 @@
 
   import { hi, it } from "$components/custom/logo/logoshape.js";
 
-  export let animate = false;
   export let duration = 1000;
   let show = false;
 

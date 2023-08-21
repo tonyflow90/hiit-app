@@ -22,7 +22,7 @@
   <end class="flex-none flex h-full items-center pr-2">
     <div class="grid grid-flow-col gap-2">
       {#await settings.init() then}
-        <ThemeSelectDialog bind:currentTheme={$settings.theme.value} />
+        <!-- <ThemeSelectDialog bind:currentTheme={$settings.theme.value} /> -->
         <SettingsDialog />
       {/await}
     </div>
