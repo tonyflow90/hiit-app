@@ -12,10 +12,10 @@ export default defineConfig({
     mkcert(),
     sveltekit(),
     SvelteKitPWA({
+      base: "/",
       srcDir: "./src",
       mode: "development",
       scope: "/",
-      base: "/",
       selfDestroying: process.env.SELF_DESTROYING_SW === "true",
       manifest: {
         short_name: "HIIT",

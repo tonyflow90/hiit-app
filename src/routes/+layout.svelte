@@ -11,17 +11,24 @@
     show = true;
     setTimeout(() => (show = false), startUpTime);
   });
-  import Logo from "$components/custom/images/Logo.svelte";
+  import Logo from "$components/custom/logo/Logo.svelte";
   import { onMount } from "svelte";
-  import Background from "$components/custom/images/Background.svelte";
+  import Background from "$components/custom/SplashScreen.svelte";
   import Theme from "$components/custom/theme/Theme.svelte";
-  import ThemeSwitch from "$components/custom/theme/ThemeSwitch.svelte";
-</script>
+
+  import { pwaInfo } from 'virtual:pwa-info'; 
+
+  $: webManifestLink = pwaInfo ? pwaInfo.webManifest.linkTag : '' 
+</script> 
+  
+<svelte:head> 
+ 	{@html webManifestLink} 
+</svelte:head>
 
 {#await settings.init() then}
   <Theme bind:theme={$settings.theme.value} />
-  <!-- <ThemeSwitch bind:currentTheme={$settings.theme.value} /> -->
 {/await}
+
 
 <Toaster />
 

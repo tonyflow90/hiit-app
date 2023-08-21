@@ -27,7 +27,7 @@
     name="apple-mobile-web-app-status-bar-style"
     content="black-translucent"
   />
-  <!-- <meta name="theme-color" content="hsl(24.3, 97.4%, 54.3%)" /> -->
+  <!-- <meta name="theme-color" content="" /> -->
 
   <meta
     name="color-scheme"

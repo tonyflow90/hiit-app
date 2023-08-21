@@ -1,6 +1,5 @@
 import Dexie from "dexie";
 import { browser } from "$app/environment";
-import { trainings } from "./stores";
 
 const dbName = "hiit-app-db";
 const dbVersion = 1;
@@ -12,7 +11,26 @@ db.version(1).stores(tables);
 
 db.on("populate", function (transaction) {
   const t1 = {
-    name: "T1 Training 123 bla test",
+    name: "T1",
+    pause_duration: 1,
+    current_step: 0,
+    steps: [
+      {
+        name: "S1",
+        duration: 2,
+      },
+      {
+        name: "S2",
+        duration: 2,
+      },
+      {
+        name: "S3",
+        duration: 2,
+      },
+    ],
+  };
+  const t2 = {
+    name: "T2",
     pause_duration: 1,
     current_step: 0,
     steps: [
@@ -50,6 +68,7 @@ db.on("populate", function (transaction) {
       },
     ],
   };
+  create("trainings", t1);
   create("trainings", t1);
   create("settings", { name: "theme", value: "default" });
 });
