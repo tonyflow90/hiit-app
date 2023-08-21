@@ -81,7 +81,7 @@ define(['./workbox-16108a29'], (function (workbox) { 'use strict';
    * See https://goo.gl/S9QRab
    */
   workbox.precacheAndRoute([{
-    "url": "_app/immutable/assets/0.afe07513.css",
+    "url": "_app/immutable/assets/0.2022c9bc.css",
     "revision": null
   }, {
     "url": "_app/immutable/assets/2.a5c04c87.css",
@@ -99,7 +99,7 @@ define(['./workbox-16108a29'], (function (workbox) { 'use strict';
     "url": "_app/immutable/assets/dark.52c20f4d.css",
     "revision": null
   }, {
-    "url": "_app/immutable/assets/default.34dee98d.css",
+    "url": "_app/immutable/assets/default.9e3927ef.css",
     "revision": null
   }, {
     "url": "_app/immutable/assets/light-green.5353b880.css",
@@ -108,40 +108,37 @@ define(['./workbox-16108a29'], (function (workbox) { 'use strict';
     "url": "_app/immutable/assets/neon.1f718ea2.css",
     "revision": null
   }, {
-    "url": "_app/immutable/chunks/index.5e3a4e02.js",
+    "url": "_app/immutable/chunks/index.daee77df.js",
     "revision": null
   }, {
-    "url": "_app/immutable/chunks/index.b10d45b6.js",
-    "revision": null
-  }, {
-    "url": "_app/immutable/chunks/paths.142cd225.js",
+    "url": "_app/immutable/chunks/paths.d07ade38.js",
     "revision": null
   }, {
     "url": "_app/immutable/chunks/preload-helper.a4192956.js",
     "revision": null
   }, {
-    "url": "_app/immutable/chunks/root.14140f10.js",
+    "url": "_app/immutable/chunks/scheduler.340a51ff.js",
     "revision": null
   }, {
-    "url": "_app/immutable/chunks/scheduler.008d26b0.js",
+    "url": "_app/immutable/chunks/singletons.4b541382.js",
     "revision": null
   }, {
-    "url": "_app/immutable/chunks/singletons.64e4e591.js",
+    "url": "_app/immutable/chunks/themes.c36cbda6.js",
     "revision": null
   }, {
-    "url": "_app/immutable/entry/app.92b092bf.js",
+    "url": "_app/immutable/entry/app.e2d8e059.js",
     "revision": null
   }, {
-    "url": "_app/immutable/entry/start.ccadf12a.js",
+    "url": "_app/immutable/entry/start.e4d9f304.js",
     "revision": null
   }, {
-    "url": "_app/immutable/nodes/0.55cf5c84.js",
+    "url": "_app/immutable/nodes/0.6b612ab3.js",
     "revision": null
   }, {
-    "url": "_app/immutable/nodes/1.5ff3abe7.js",
+    "url": "_app/immutable/nodes/1.f64cf96c.js",
     "revision": null
   }, {
-    "url": "_app/immutable/nodes/2.49bff89e.js",
+    "url": "_app/immutable/nodes/2.c873241f.js",
     "revision": null
   }, {
     "url": "_app/immutable/workers/timer-fd618b32.js",
@@ -178,7 +175,7 @@ define(['./workbox-16108a29'], (function (workbox) { 'use strict';
     "revision": "96617d245aa234a55121f68a4b3673ff"
   }, {
     "url": "theme/default.css",
-    "revision": "d2c6e0254d1b93c8fa70d24e21a582f3"
+    "revision": "be8a0b922e216bfaeb077843d54e308a"
   }, {
     "url": "theme/light-green.css",
     "revision": "60098fd703b7d90da28933ff9895fab2"
@@ -195,13 +192,13 @@ define(['./workbox-16108a29'], (function (workbox) { 'use strict';
     "url": "timer.svg",
     "revision": "25b3a0df30ac3eabd94c02e59bca2a89"
   }, {
-    "url": "/hiit-app/",
-    "revision": "1c3bae217d781964a9ef2958bfe790f6"
+    "url": "/",
+    "revision": "453e9224e74f2762f5793442200e78b4"
   }, {
     "url": "manifest.webmanifest",
     "revision": "20312491d2547a7dfb179ee71fd8ead2"
   }], {});
   workbox.cleanupOutdatedCaches();
-  workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("/hiit-app/")));
+  workbox.registerRoute(new workbox.NavigationRoute(workbox.createHandlerBoundToURL("/")));
 
 }));
