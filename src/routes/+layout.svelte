@@ -25,6 +25,7 @@
   {@html webManifestLink}
 </svelte:head>
 
+
 {#await settings.init() then}
   <Theme bind:theme={$settings.theme.value} />
 
