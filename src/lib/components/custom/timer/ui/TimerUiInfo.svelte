@@ -4,6 +4,7 @@
     CardHeader,
     CardTitle,
     CardContent,
+    CardDescription,
   } from "$components/ui/card";
   import { buttonVariants } from "$components/ui/button";
 
