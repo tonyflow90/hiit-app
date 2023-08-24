@@ -1,12 +1,5 @@
 <script>
-  import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardFooter,
-    CardHeader,
-    CardTitle,
-  } from "$components/ui/card";
+  import { Card } from "$components/ui/card";
   import { fade, scale, slide } from "svelte/transition";
 
   import {
@@ -24,56 +17,48 @@
   export let activeStep;
   export let pauseIsRunning;
 
-  import {
-    Table,
-    TableBody,
-    TableCaption,
-    TableCell,
-    TableHead,
-    TableHeader,
-    TableRow,
-  } from "$components/ui/table";
+  import { Table } from "$components/ui/table";
   import { Input } from "$components/ui/input";
   import { base } from "$app/paths";
 </script>
 
-<Card class="w-full h-auto bg-primary shadow-lg text-primary-foreground">
-  <CardHeader>
-    <CardTitle>
+<Card.Root class="w-full h-auto bg-primary shadow-lg text-primary-foreground">
+  <Card.Header>
+    <Card.Title>
       <div class="flex">
         <h1 class="flex flex-auto text-3xl">
           {item.name}
         </h1>
       </div>
-    </CardTitle>
-  </CardHeader>
-  <CardContent>
-    <Table>
-      <TableHeader>
-        <TableRow>
-          <TableHead class="w-[100px]">Status</TableHead>
-          <TableHead>Step</TableHead>
-          <TableHead class="text-right">Time</TableHead>
-        </TableRow>
-      </TableHeader>
-      <TableBody>
+    </Card.Title>
+  </Card.Header>
+  <Card.Content>
+    <Table.Root>
+      <Table.Header>
+        <Table.Row>
+          <Table.Head class="w-[100px]">Status</TableHead>
+          <Table.Head>Step</TableHead>
+          <Table.Head class="text-right">Time</TableHead>
+        </Table.Row>
+      </Table.Header>
+      <Table.Body>
         {#each item.steps as step, i (i)}
-          <TableRow key={i}>
-            <TableCell>
+          <Table.Row key={i}>
+            <Table.Cell>
               {#if i < activeStep}
                 <Check class="h-4 w-4" />
                 <!-- {:else if !pauseIsRunning && (i === activeStep && running)} -->
               {:else if i === activeStep && running}
                 <Loader2 class="h-4 w-4 animate-spin" />
               {/if}
-            </TableCell>
-            <TableCell>
+            </Table.Cell>
+            <Table.Cell>
               {step.name}
-            </TableCell>
-            <TableCell class="text-right">{step.duration}</TableCell>
-          </TableRow>
+            </Table.Cell>
+            <Table.Cell class="text-right">{step.duration}</Table.Cell>
+          </Table.Row>
         {/each}
-      </TableBody>
-    </Table>
-  </CardContent>
-</Card>
+      </Table.Body>
+    </Table.Root>
+  </Card.Content>
+</Card.Root>

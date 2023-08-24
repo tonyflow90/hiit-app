@@ -5,7 +5,6 @@
   import { fade } from "svelte/transition";
 
   import { Button, buttonVariants } from "$components/ui/button/index";
-  import * as Card from "$lib/components/ui/card";
 
   import { ArrowBigLeft, ArrowBigUp, Edit2 } from "lucide-svelte";
 
@@ -13,6 +12,7 @@
 
   import Header from "$components/custom/Header.svelte";
   import SettingsDialog from "$components/custom/SettingsDialog.svelte";
+  import { Card } from "$components/components/ui/card";
 
   onMount(() => {
     window.addEventListener("scroll", (evt) => {
