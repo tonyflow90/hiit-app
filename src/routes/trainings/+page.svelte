@@ -1,6 +1,6 @@
 <script>
   import { onMount } from "svelte";
-  import { goto, afterNavigate } from "$app/navigation";
+  import { afterNavigate } from "$app/navigation";
   import { base } from "$app/paths";
   import { fade } from "svelte/transition";
 
