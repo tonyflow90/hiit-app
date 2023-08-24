@@ -12,7 +12,7 @@
 
   import Header from "$components/custom/Header.svelte";
   import SettingsDialog from "$components/custom/SettingsDialog.svelte";
-  import { Card } from "$components/ui/card";
+  import { Card, CardContent } from "$components/ui/card";
 
   onMount(() => {
     window.addEventListener("scroll", (evt) => {
@@ -87,8 +87,8 @@
               in:fade={{ delay: 350, duration: 250 }}
               out:fade={{ delay: 0, duration: 250 }}
             >
-              <Card.Root class="w-full">
-                <Card.Content>
+              <Card class="w-full">
+                <CardContent>
                   <div class="flex pt-6">
                     <h1 class="flex flex-auto text-lg">
                       {item.name}
@@ -103,8 +103,8 @@
                   <span class="flex text-sm">
                     You have {item.steps.length} steps to complete.
                   </span>
-                </Card.Content>
-              </Card.Root>
+                </CardContent>
+              </Card>
             </li>
           {/each}
         </ul>
