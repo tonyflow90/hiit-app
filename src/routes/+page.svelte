@@ -1,7 +1,7 @@
 <script>
-  import { ArrowBigDown, ArrowBigUp } from "lucide-svelte";
+  import { ArrowBigDown, ArrowBigRight, ArrowBigUp } from "lucide-svelte";
 
-  import { Button } from "$components/ui/button/index";
+  import { Button, buttonVariants } from "$components/ui/button/index";
   import Notification from "$components/custom/notification/Notification.svelte";
 
   let notification;
@@ -43,9 +43,8 @@
     if (el) el.scrollIntoView(true);
   };
 
-  import TimerDetail from "$components/custom/timer/TimerDetail.svelte";
-  import TimerInfo from "$components/custom/timer/TimerInfo.svelte";
-  import Timer from "$components/custom/timer/TimerUi.svelte";
+  import TimerUiInfo from "$components/custom/timer/ui/TimerUiInfo.svelte";
+  import Timer from "$components/custom/timer/ui/TimerUi.svelte";
   import { fade, scale } from "svelte/transition";
   import { onMount } from "svelte";
 
@@ -57,7 +56,6 @@
   let showScrollToDetailButton = true;
 
   import Header from "$components/custom/Header.svelte";
-  import ThemeSelect from "$components/custom/theme/ThemeSelect.svelte";
 
   /**
    * @type {number | undefined}
@@ -71,6 +69,11 @@
   };
 
   import { trainings, settings } from "$stores/stores";
+  import { base } from "$app/paths";
+  import SettingsDialog from "$components/custom/SettingsDialog.svelte";
+  import TrainingSelect from "$components/custom/TrainingSelect.svelte";
+  import Background from "$components/custom/timer/ui/Background.svelte";
+  import Logo from "$components/custom/logo/Logo.svelte";
 </script>
 
 <svelte:head>
@@ -80,42 +83,31 @@
 
 <Notification bind:this={notification} />
 
-{#if showScrollToTopButton}
-  <div class="flex fixed z-50 bottom-8 right-8" transition:fade>
-    <div class="flex flex-col items-center justify-center">
-      <Button
-        class="rounded-full hover:bg-accent w-16 h-16 p-0"
-        variant="secondary"
-        on:click={scrollToTop}
-      >
-        <ArrowBigUp />
-      </Button>
-    </div>
-  </div>
-{:else if selectedTraining}
-  <div class="flex fixed z-50 bottom-8 right-8" transition:fade>
-    <div class="flex flex-col items-center justify-center">
-      <Button
-        class="rounded-full hover:bg-accent w-16 h-16 p-0"
-        variant="secondary"
-        on:click={() => scrollToElement(detailSection)}
-      >
-        <ArrowBigDown />
-      </Button>
-    </div>
-  </div>
-{/if}
-
 <div class="flex flex-col w-full min-h-[100vh] items-center">
   <div class="flex flex-col flex-1 w-full max-w-2xl">
-    <Header bind:selectedTraining />
+    <Header>
+      <div>
+        {#await trainings.init() then}
+          <TrainingSelect bind:selectedTraining />
+        {:catch error}
+          <p>{error} ...</p>
+        {/await}
+      </div>
+      <div slot="end">
+        <div class="grid grid-flow-col gap-2">
+          {#await settings.init() then}
+            <SettingsDialog />
+          {/await}
+        </div>
+      </div>
+    </Header>
 
-    {#if selectedTraining}
-      <section
-        bind:this={mainSection}
-        id="main"
-        class="flex flex-col w-full h-[90vh]"
-      >
+    <section
+      bind:this={mainSection}
+      id="main"
+      class="flex flex-col w-full h-[90vh]"
+    >
+      {#if selectedTraining}
         <div
           class="flex flex-1 w-full items-center justify-center overflow-hidden"
         >
@@ -131,12 +123,12 @@
             />
           </div>
         </div>
-        <div class="items-center justify-center p-8 pl-2 pr-2 overflow-hidden">
+        <div class="items-center justify-center p-8 pl-2 pr-2">
           <div
             in:fade={{ delay: 350, duration: 250 }}
             out:fade={{ delay: 0, duration: 250 }}
           >
-            <TimerInfo
+            <TimerUiInfo
               item={selectedTraining}
               {running}
               {activeStep}
@@ -144,83 +136,25 @@
             />
           </div>
         </div>
-      </section>
-
-      <section
-        bind:this={detailSection}
-        id="detail"
-        class="w-full min-h-[100vh] pt-6 pl-2 pr-2 overflow-visible"
-      >
-        <div class="w-full items-center justify-center">
-          <TimerDetail
-            bind:item={selectedTraining}
-            {running}
-            {activeStep}
-            {pauseIsRunning}
-          />
+      {:else}
+        <div
+          class="flex flex-col flex-1 w-full items-center justify-center overflow-hidden"
+        >
+          <p>Welcome to your HII Training</p>
+          <Background running={true} class="max-w-full w-[50vh] h-[50vh]">
+            <Logo duration={0} />
+          </Background>
+          <div class="flex items-center justify-center pb-4">
+            <a
+              href="{base}/trainings"
+              class={buttonVariants({ variant: "ghost" })}
+            >
+              <h1 class="flex flex-auto text-xl">show all trainings</h1>
+              <ArrowBigRight class="flex m-2" />
+            </a>
+          </div>
         </div>
-      </section>
-    {/if}
+      {/if}
+    </section>
   </div>
 </div>
-
-<!-- {#await trainings.init() then}
-  <div class="flex flex-col w-full min-h-[90vh] items-center">
-    <div class="flex flex-col flex-1 w-full max-w-2xl">
-      {#if selectedItem}
-        <section bind:this={mainSection} id="main" class="w-full h-[90vh]">
-          <div class="flex w-full items-center justify-center overflow-hidden">
-            {#each $trainings as item, i}
-              {#if item === selectedItem}
-                <div
-                  in:scale={{ delay: 300, duration: 250 }}
-                  out:fade={{ delay: 0, duration: 250 }}
-                >
-                  <Timer
-                    {item}
-                    bind:running
-                    bind:activeStep
-                    bind:pauseIsRunning
-                  />
-                </div>
-              {/if}
-            {/each}
-          </div>
-          <div class="items-center justify-center pl-2 pr-2 overflow-hidden">
-            {#each $trainings as item, i}
-              {#if item === selectedItem}
-                <div
-                  in:fade={{ delay: 350, duration: 250 }}
-                  out:fade={{ delay: 0, duration: 250 }}
-                >
-                  <TimerInfo {item} {running} {activeStep} {pauseIsRunning} />
-                </div>
-              {/if}
-            {/each}
-          </div>
-        </section>
-
-        <section
-          bind:this={detailSection}
-          id="detail"
-          class="w-full min-h-[100vh] pt-6 pl-2 pr-2 overflow-visible"
-        >
-          <div class="w-full items-center justify-center">
-            {#each $trainings as item, i}
-              {#if item === selectedItem}
-                <TimerDetail
-                  bind:item
-                  {running}
-                  {activeStep}
-                  {pauseIsRunning}
-                />
-              {/if}
-            {/each}
-          </div>
-        </section>
-      {/if}
-    </div>
-  </div>
-{:catch error}
-  <p>{error} ...</p>
-{/await} -->

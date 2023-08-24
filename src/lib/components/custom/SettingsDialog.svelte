@@ -11,7 +11,7 @@
 </script>
 
 <Dialog.Root>
-  <Dialog.Trigger class={buttonVariants({ variant: "outline" })}>
+  <Dialog.Trigger class={buttonVariants({ variant: "ghost" })}>
     <Settings />
   </Dialog.Trigger>
   <Dialog.Content class="flex flex-col h-[100vh] md:h-auto">

@@ -1,1 +1,0 @@
-(function(){"use strict";let s=0,a=!1,e=!1,t;const l=1e3,r=()=>{a&&!e&&s++,n()};function n(){postMessage({time:s,isRunning:a,isPaused:e})}self.onmessage=function(i){switch(i.data){case"start":a=!0,s=0,t=this.setInterval(r,l);break;case"pause":e=!0;break;case"resume":e=!1;break;case"reset":clearInterval(t),s=0,a=!1,e=!1;break;case"stop":clearInterval(t),a=!1,e=!1;break}n()}})();

@@ -27,23 +27,23 @@
 
 {#await settings.init() then}
   <Theme bind:theme={$settings.theme.value} />
+
+  <Toaster />
+
+  <Background size={100} duration={500} {show}>
+    <div class="flex flex-col justify-center items-center">
+      <Logo duration={500} />
+      <p class="flex text-2xl text-accent font-bold animate-ping delay-1500">
+        loading
+      </p>
+    </div>
+  </Background>
+
+  <main
+    class="flex flex-col justify-center bg-primary min-h-screen min-w-full text-secondary"
+  >
+    {#if !show}
+      <slot />
+    {/if}
+  </main>
 {/await}
-
-<Toaster />
-
-<Background size={100} duration={500} {show}>
-  <div class="flex flex-col justify-center items-center">
-    <Logo duration={500} />
-    <p class="flex text-2xl text-accent font-bold animate-ping delay-1500">
-      loading
-    </p>
-  </div>
-</Background>
-
-<main
-  class="flex flex-col justify-center bg-primary min-h-screen min-w-full text-secondary"
->
-  {#if !show}
-    <slot />
-  {/if}
-</main>
