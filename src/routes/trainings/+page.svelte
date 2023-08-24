@@ -12,7 +12,7 @@
 
   import Header from "$components/custom/Header.svelte";
   import SettingsDialog from "$components/custom/SettingsDialog.svelte";
-  import { Card } from "$components/components/ui/card";
+  import { Card } from "$components/ui/card";
 
   onMount(() => {
     window.addEventListener("scroll", (evt) => {
