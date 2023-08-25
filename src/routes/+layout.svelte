@@ -41,7 +41,7 @@
   </Background>
 
   <main
-    class="flex flex-col justify-center bg-primary min-h-screen min-w-full text-secondary"
+    class="flex flex-col justify-center min-h-screen min-w-full"
   >
     {#if !show}
       <slot />

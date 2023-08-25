@@ -34,7 +34,7 @@
   import { base } from "$app/paths";
 </script>
 
-<Card class="w-full h-auto bg-primary shadow-lg text-primary-foreground">
+<Card class="w-full h-auto bg-primary shadow-lg">
   <CardHeader>
     <CardTitle>
       <div class="flex">

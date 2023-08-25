@@ -88,8 +88,8 @@
               out:fade={{ delay: 0, duration: 250 }}
             >
               <Card class="w-full">
-                <CardContent>
-                  <div class="flex pt-6">
+                <CardContent class="p-2">
+                  <div class="flex">
                     <h1 class="flex flex-auto text-lg">
                       {item.name}
                     </h1>
