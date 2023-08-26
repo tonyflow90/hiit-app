@@ -15,8 +15,10 @@
 
   onMount(async () => {
     await trainings.init();
-    let id = Math.max(...$trainings.map((t) => t.id));
-    newTraining.id = isNaN(id) ? 1 : id + 1;
+    let id = 1;
+    if ($trainings.length > 0)
+      id = Math.max(...$trainings.map((t) => t.id)) + 1;
+    newTraining.id = id;
   });
 
   let newTraining = {
