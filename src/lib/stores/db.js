@@ -10,67 +10,65 @@ export const db = new Dexie(dbName);
 db.version(1).stores(tables);
 
 db.on("populate", function (transaction) {
-  const t1 = {
-    name: "T1",
-    pause_duration: 1,
-    current_step: 0,
-    steps: [
-      {
-        name: "S1",
-        duration: 2,
-      },
-      {
-        name: "S2",
-        duration: 2,
-      },
-      {
-        name: "S3",
-        duration: 2,
-      },
-    ],
-  };
-  const t2 = {
-    name: "T2",
-    pause_duration: 1,
-    current_step: 0,
-    steps: [
-      {
-        name: "S1",
-        duration: 2,
-      },
-      {
-        name: "S2",
-        duration: 2,
-      },
-      {
-        name: "S3",
-        duration: 2,
-      },
-      {
-        name: "S3",
-        duration: 2,
-      },
-      {
-        name: "S3",
-        duration: 2,
-      },
-      {
-        name: "S3",
-        duration: 2,
-      },
-      {
-        name: "S3",
-        duration: 2,
-      },
-      {
-        name: "S3",
-        duration: 2,
-      },
-    ],
-  };
-  create("trainings", t1);
-  create("trainings", t1);
-  create("settings", { name: "theme", value: "default" });
+  // const t1 = {
+  //   name: "T1",
+  //   pause_duration: 1,
+  //   steps: [
+  //     {
+  //       name: "S1",
+  //       duration: 2,
+  //     },
+  //     {
+  //       name: "S2",
+  //       duration: 2,
+  //     },
+  //     {
+  //       name: "S3",
+  //       duration: 2,
+  //     },
+  //   ],
+  // };
+  // const t2 = {
+  //   name: "T2",
+  //   pause_duration: 1,
+  //   steps: [
+  //     {
+  //       name: "S1",
+  //       duration: 2,
+  //     },
+  //     {
+  //       name: "S2",
+  //       duration: 2,
+  //     },
+  //     {
+  //       name: "S3",
+  //       duration: 2,
+  //     },
+  //     {
+  //       name: "S3",
+  //       duration: 2,
+  //     },
+  //     {
+  //       name: "S3",
+  //       duration: 2,
+  //     },
+  //     {
+  //       name: "S3",
+  //       duration: 2,
+  //     },
+  //     {
+  //       name: "S3",
+  //       duration: 2,
+  //     },
+  //     {
+  //       name: "S3",
+  //       duration: 2,
+  //     },
+  //   ],
+  // };
+  // create("trainings", t1);
+  // create("trainings", t1);
+  // create("settings", { name: "theme", value: "default" });
 });
 
 db.open().then((db) => {

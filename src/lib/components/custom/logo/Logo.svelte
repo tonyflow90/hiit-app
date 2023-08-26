@@ -6,6 +6,7 @@
   import { hi, it } from "$components/custom/logo/logoshape.js";
 
   export let duration = 1000;
+  export let size = "3.33333in";
   let show = false;
 
   onMount(() => {
@@ -15,13 +16,13 @@
 
 {#if show}
   <div
-    class="flex flex-row w-64"
+    class="flex flex-row"
     out:fade={{ delay: 0, duration: duration }}
   >
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="3.33333in"
-      height="3.33333in"
+      width={size}
+      height={size}
       viewBox="0 0 1000 1000"
     >
       <path
@@ -39,8 +40,8 @@
 
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="3.33333in"
-      height="3.33333in"
+      width={size}
+      height={size}
       viewBox="0 0 1000 1000"
     >
       <path

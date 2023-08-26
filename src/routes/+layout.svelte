@@ -33,7 +33,7 @@
 
   <Background size={100} duration={500} {show}>
     <div class="flex flex-col justify-center items-center">
-      <Logo duration={500} />
+      <Logo duration={500} size="1.8in" />
       <p class="flex text-2xl text-accent font-bold animate-ping delay-1500">
         loading
       </p>

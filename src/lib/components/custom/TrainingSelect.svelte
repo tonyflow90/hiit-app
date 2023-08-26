@@ -22,25 +22,32 @@
     </Select.Trigger>
     <Select.Content class="w-[500px]">
       <Select.Group>
-        <Select.Label>Trainings</Select.Label> 
-        <div class="grid grid-flow-col grid-cols-2 gap-1 items-center justify-center pb-1">
+        <Select.Label class="text-lg text-accent">Trainings</Select.Label>
+        <div
+          class="grid grid-flow-col grid-cols-2 gap-1 items-center justify-center pb-1"
+        >
           <a
             href="{base}/trainings/create"
-            class="{buttonVariants({ variant: 'outline' })} p-2"
+            class="{buttonVariants({ variant: 'outline' })}"
           >
-            <Plus class="flex mr-2" />
-            <span class="flex flex-auto items-center justify-center text-sm">new</span>
+            <Plus class="flex mr-1" />
+            <span class="flex flex-auto items-center justify-center text-sm"
+              >new</span
+            >
           </a>
           <a
             href="{base}/trainings"
-            class="{buttonVariants({ variant: 'outline' })} p-2"
+            class="{buttonVariants({ variant: 'outline' })}"
           >
-          <span class="flex flex-auto items-center justify-center text-sm">all</span>
+            <span class="flex flex-auto items-center justify-center text-sm"
+              >all</span
+            >
             <ArrowBigRight class="flex ml-2" />
           </a>
         </div>
         {#each $trainings as training, i}
           <Select.Item
+            class="border-2 rounded-sm mt-2"
             on:click={() => {
               selectedTraining = training;
             }}

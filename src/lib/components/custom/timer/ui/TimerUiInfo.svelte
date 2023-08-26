@@ -24,7 +24,7 @@
   <CardHeader>
     <CardTitle>
       <div class="flex">
-        <h1 class="flex flex-auto text-3xl">
+        <h1 class="flex flex-auto text-3xl text-accent">
           {item.name}
         </h1>
         <a

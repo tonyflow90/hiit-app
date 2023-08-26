@@ -11,11 +11,29 @@ function createStore(tableName) {
       if (result) store.set(result);
       return result;
     },
-    set: async (newItems) => {
+    update: async (newItems) => {
       newItems.forEach((newItem) => {
         db.update(tableName, newItem.id, newItem);
       });
       store.set(newItems);
+    },
+    set: async (newItems) => {
+      let items = await db.getAll(tableName);
+      if (newItems.length > items.length) {
+        newItems.forEach(async (newItem) => {
+          let item = await db.get(tableName, newItem.id);
+          if (!item) db.create(tableName, newItem);
+        });
+        store.set(newItems);
+      } else if (newItems.length < items.length) {
+        items.forEach(async (item) => {
+          let b = newItems.find((i) => i.id == item.id);
+          if (!b) await db.remove(tableName, item.id);
+        });
+        store.set(newItems);
+      } else {
+        store.set(items);
+      }
     },
   };
 }

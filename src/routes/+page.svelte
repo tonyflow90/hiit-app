@@ -142,7 +142,7 @@
         >
           <p>Welcome to your HII Training</p>
           <Background running={true} class="max-w-full w-[50vh] h-[50vh]">
-            <Logo duration={0} />
+            <Logo duration={0} size="1.5in" />
           </Background>
           <div class="flex items-center justify-center pb-4">
             <a
