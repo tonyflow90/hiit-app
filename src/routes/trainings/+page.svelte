@@ -12,7 +12,6 @@
 
   import Header from "$components/custom/Header.svelte";
   import SettingsDialog from "$components/custom/SettingsDialog.svelte";
-  import { Card, CardContent } from "$components/ui/card";
 
   onMount(() => {
     window.addEventListener("scroll", (evt) => {
@@ -33,6 +32,7 @@
   let previousPage = base;
   let showScrollToTopButton = false;
   let mainSection;
+  import * as Card from "$lib/components/ui/card";
 </script>
 
 <svelte:head>
@@ -87,8 +87,8 @@
               in:fade={{ delay: 350, duration: 250 }}
               out:fade={{ delay: 0, duration: 250 }}
             >
-              <Card class="w-full">
-                <CardContent class="p-2 pl-4">
+              <Card.Root class="w-full">
+                <Card.Content class="p-2 pl-4">
                   <div class="flex">
                     <h1 class="flex flex-auto text-lg text-accent">
                       {item.name}
@@ -103,8 +103,8 @@
                   <span class="flex text-sm">
                     You have {item.steps.length} steps to complete.
                   </span>
-                </CardContent>
-              </Card>
+                </Card.Content>
+              </Card.Root>
             </li>
           {/each}
         </ul>

@@ -1,11 +1,5 @@
 <script>
-  import {
-    Card,
-    CardHeader,
-    CardTitle,
-    CardContent,
-    CardDescription,
-  } from "$components/ui/card";
+  import * as Card from "$lib/components/ui/card";
   import { buttonVariants } from "$components/ui/button";
 
   import { fade } from "svelte/transition";
@@ -20,9 +14,9 @@
   export let pauseIsRunning;
 </script>
 
-<Card class="w-full h-fit shadow-lg">
-  <CardHeader>
-    <CardTitle>
+<Card.Root  class="w-full h-fit shadow-lg">
+  <Card.Header>
+    <Card.Title>
       <div class="flex">
         <h1 class="flex flex-auto text-3xl text-accent">
           {item.name}
@@ -34,13 +28,12 @@
           <Edit2 />
         </a>
       </div>
-    </CardTitle>
-    <CardDescription
-      >You have {activeStep != undefined ? activeStep : 0}/{item.steps.length}
-      steps completed.</CardDescription
-    >
-  </CardHeader>
-  <CardContent>
+    </Card.Title>
+    <Card.Description>
+      You have {activeStep != undefined ? activeStep : 0}/{item.steps.length} steps completed.
+    </Card.Description>
+  </Card.Header>
+  <Card.Content>
     <ul class="flex items-center h-10 overflow-hidden relative">
       {#each item.steps as step, i}
         {#if activeStep === i}
@@ -72,5 +65,5 @@
         {/if}
       {/each}
     </ul>
-  </CardContent>
-</Card>
+  </Card.Content>
+</Card.Root>
